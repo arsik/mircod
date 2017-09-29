@@ -27,4 +27,4 @@ gulp
 
 ## Authors
 
-* **Arslan Mamedov** - *Initial work* - [arsik](https://github.com/arsik)
+* **Arslan Mamedov** - [arsik](https://github.com/arsik)
