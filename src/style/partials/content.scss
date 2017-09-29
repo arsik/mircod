@@ -74,7 +74,7 @@ section.content {
         &.icon-1 { background-position: -82px 0; }
         &.icon-2 { background-position: -162px 0; }
         &.icon-3 { background-position: -242px 0; }
-        &.icon-4 { background-position: -322px 0; }
+        &.icon-4 { background-position: -322px 0; background-color: transparent; border: 2px solid $colorAccent; }
       }
       &--description {
         text-align: center;
