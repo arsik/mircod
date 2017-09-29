@@ -1,0 +1,19 @@
+{
+  "name": "Mircode",
+  "version": "1.0.0",
+  "description": "mircode test task",
+  "authors": [
+    "Arslan Mamedov <a@notype.ru>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "normalize.css": "*"
+  }
+}
