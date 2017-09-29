@@ -1,0 +1,23 @@
+.parallax {
+  background: url('../img/chip-bg.jpg') no-repeat center center / cover;
+  min-height: 134px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  & h1 {
+    text-transform: uppercase;
+    font-weight: 400;
+    margin: 0;
+    color: #fff;
+
+    & span {
+      color: $colorAccent;
+    }
+  }
+}
+
+
+section.content {
+  padding: 60px 20px;
+}
