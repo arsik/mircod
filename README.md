@@ -1,6 +1,6 @@
 # Mircod test task
 
-Test task for front end developer position
+Test task for front end developer
 
 ## Getting Started
 
