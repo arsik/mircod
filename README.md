@@ -13,7 +13,7 @@ npm i
 bower i
 ```
 
-## Running the tests
+## Running
 
 ```
 gulp
