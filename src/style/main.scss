@@ -1,11 +1,15 @@
 /*
 * Third Party
 */
+
 @import "../../bower_components/normalize.css/normalize.css";
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700');
+@import "../../bower_components/slick-carousel/slick/slick.css";
+
 /*
 * Custom
 */
+
 /*@import "partials/fonts";*/
 @import "partials/app";
 @import "partials/content";

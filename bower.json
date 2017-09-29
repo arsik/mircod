@@ -1,9 +1,9 @@
 {
-  "name": "Mircode",
+  "name": "Mircod",
   "version": "1.0.0",
-  "description": "mircode test task",
+  "description": "mircod test task",
   "authors": [
-    "Arslan Mamedov <a@notype.ru>"
+    "Arslan Mamedov"
   ],
   "license": "MIT",
   "ignore": [
@@ -14,6 +14,8 @@
     "tests"
   ],
   "dependencies": {
-    "normalize.css": "*"
+    "normalize.css": "*",
+    "slick-carousel": "^1.8.0",
+    "jquery": "^3.2.1"
   }
 }

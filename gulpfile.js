@@ -89,10 +89,6 @@ gulp.task('fonts:build', function() {
     gulp.src(path.src.fonts)
         .pipe(gulp.dest(path.build.fonts))
 });
-gulp.task('video:build', function() {
-    gulp.src(path.src.video)
-        .pipe(gulp.dest(path.build.video))
-});
 gulp.task('build', [
     'html:build',
     'js:build',
