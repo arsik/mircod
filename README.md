@@ -21,9 +21,9 @@ gulp
 
 ## Built With
 
-* [Gulp](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [SASS](https://maven.apache.org/) - Dependency Management
-* [VueJS](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+* [Gulp](https://gulpjs.com/) - The web application build tool
+* [SASS](http://sass-lang.com/) - Preprocessor
+* [VueJS](https://vuejs.org/) - The Progressive JavaScript Framework
 
 ## Authors
 
