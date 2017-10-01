@@ -1,5 +1,6 @@
 .parallax {
   background: url('../img/chip-bg.jpg') no-repeat center center / cover;
+  background-attachment: fixed;
   min-height: 134px;
   display: flex;
   justify-content: center;
@@ -121,7 +122,9 @@ section.content {
       flex-grow: 0;
       background: #f95725;
       position: relative;
-
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       &:after {
         content: " ";
         display: block;
@@ -134,10 +137,55 @@ section.content {
         background: $colorAccent;
         box-shadow: 10px 0 30px 2px rgba(0,0,0,.3);
       }
+
+      &--header {
+        color: #fff;
+        text-transform: uppercase;
+        margin: 30px 0;
+
+        & span {
+          display: block;
+          font-weight: 600;
+        }
+      }
+
+      &--slider {
+        & .constructor-slider__item {
+          margin-bottom: 20px;
+          cursor: auto;
+
+          &--icon {
+            width: 60px;
+            height: 60px;
+            background-color: #f95725;
+            box-shadow: 0 0 16px rgba(0,0,0,.2);
+
+            &.icon-0 { background-position: -10px -90px; }
+            &.icon-1 { background-position: -92px -90px; }
+            &.icon-2 { background-position: -172px -90px; }
+            &.icon-3 { background-position: -250px -90px; }
+
+          }
+
+          &.active .constructor-slider__item--icon.icon-0,
+          &:hover .constructor-slider__item--icon.icon-0 { background-color: #f95725; background-position: -10px -90px; }
+          &.active .constructor-slider__item--icon.icon-1,
+          &:hover .constructor-slider__item--icon.icon-1 { background-color: #f95725; background-position: -92px -90px; }
+          &.active .constructor-slider__item--icon.icon-2,
+          &:hover .constructor-slider__item--icon.icon-2 { background-color: #f95725; background-position: -172px -90px; }
+          &.active .constructor-slider__item--icon.icon-3,
+          &:hover .constructor-slider__item--icon.icon-3 { background-color: #f95725; background-position: -250px -90px; }
+
+        }
+      }
+
     }
     &__about {
-      flex-grow: 3;
+      flex-grow: 2;
       background: rgba(239,69,31,1);
+      padding: 34px;
+      position: relative;
+      color: #fff;
       /*background: -moz-linear-gradient(-45deg, rgba(239,69,31,1) 0%, rgba(239,69,31,1) 26%, rgba(239,69,31,1) 43%, rgba(239,69,31,1) 53%, rgba(255,255,255,1) 53%, rgba(255,255,255,1) 54%, rgba(255,255,255,1) 100%);
       background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(239,69,31,1)), color-stop(26%, rgba(239,69,31,1)), color-stop(43%, rgba(239,69,31,1)), color-stop(53%, rgba(239,69,31,1)), color-stop(53%, rgba(255,255,255,1)), color-stop(54%, rgba(255,255,255,1)), color-stop(100%, rgba(255,255,255,1)));
       background: -webkit-linear-gradient(-45deg, rgba(239,69,31,1) 0%, rgba(239,69,31,1) 26%, rgba(239,69,31,1) 43%, rgba(239,69,31,1) 53%, rgba(255,255,255,1) 53%, rgba(255,255,255,1) 54%, rgba(255,255,255,1) 100%);
@@ -145,9 +193,53 @@ section.content {
       background: -ms-linear-gradient(-45deg, rgba(239,69,31,1) 0%, rgba(239,69,31,1) 26%, rgba(239,69,31,1) 43%, rgba(239,69,31,1) 53%, rgba(255,255,255,1) 53%, rgba(255,255,255,1) 54%, rgba(255,255,255,1) 100%);
       */background: linear-gradient(110deg, rgba(239,69,31,1) 0%, rgba(239,69,31,1) 26%, rgba(239,69,31,1) 43%, rgba(239,69,31,1) 53%, rgba(255,255,255,1) 53%, rgba(255,255,255,1) 54%, rgba(255,255,255,1) 100%);
       filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ef451f', endColorstr='#ffffff', GradientType=1 );
+
+      &:after {
+        content: "LIVE VIEW";
+        position: absolute;
+        bottom: 20px;
+        display: block;
+        color: #fff;
+        font-weight: 700;
+        font-size: 28px;
+        max-width: 40px;
+        line-height: 28px;
+      }
+
+      &--header {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        & h1 {
+          text-transform: uppercase;
+          font-size: 24px;
+          max-width: 160px;
+          margin: 0 20px 0 0;
+        }
+
+      }
+
+      &--content {
+        max-width: 270px;
+        margin-top: 40px;
+
+        & p {
+
+          display: block;
+          font-size: 14px;
+          line-height: 20px;
+          margin-bottom: 30px;
+
+          & strong {
+            margin-bottom: 20px;
+            display: block;
+          }
+        }
+      }
     }
     &__params {
-      flex-grow: 3;
+      flex-grow: 10;
     }
   }
 
