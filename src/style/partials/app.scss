@@ -30,6 +30,7 @@ button {
   font-size: 14px;
   cursor: pointer;
   transition: all .4s ease;
+  border: 1px solid transparent;
 }
 button.light {
   color: #fff;
@@ -42,7 +43,7 @@ button.light {
 }
 button.dark {
   color: #fff;
-  border: none;
+  border: 1px solid transparent;
   background: $colorAccent;
 
   &:hover {
