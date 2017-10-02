@@ -23,7 +23,6 @@ gulp
 
 * [Gulp](https://gulpjs.com/) - The web application build tool
 * [SASS](http://sass-lang.com/) - Preprocessor
-* [VueJS](https://vuejs.org/) - The Progressive JavaScript Framework
 
 ## Authors
 
